@@ -36,7 +36,9 @@ Download the raw file at https://github.com/Rairye/convert-with-ents/blob/main/c
 ### Code Sample
 
 ```javascript
+import convertWithEnts from "convert-with-ents";
+
 var source = "<text>Hey, how are you doing?<\/text>";
-result = convertWithEnts(source);
+var result = convertWithEnts(source);
 console.log(result);
 ```
