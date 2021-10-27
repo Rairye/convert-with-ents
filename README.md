@@ -11,12 +11,29 @@ Converts the following characters into the HTML entity quivalents.
 
 ## Standard JS Version 
 
+### Installation
+
+Download the raw file at https://github.com/Rairye/convert-with-ents/blob/main/convert-with-ents.js
+
 ### Code Sample
 
 
 ```html
 <script src = "convert-with-ents.js"> </script>
 ```
+```javascript
+var source = "<text>Hey, how are you doing?<\/text>";
+result = convertWithEnts(source);
+console.log(result);
+```
+## Module Version 
+
+### Installation
+
+Download the raw file at https://github.com/Rairye/convert-with-ents/blob/main/convert-with-ents.js
+
+### Code Sample
+
 ```javascript
 var source = "<text>Hey, how are you doing?<\/text>";
 result = convertWithEnts(source);
