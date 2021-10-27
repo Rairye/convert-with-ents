@@ -15,8 +15,9 @@ Converts the following characters into the HTML entity quivalents.
 
 Download the raw file at https://github.com/Rairye/convert-with-ents/blob/main/convert-with-ents.js
 
-### Code Sample
+Or, download one of the releases on the right.
 
+### Code Sample
 
 ```html
 <script src = "convert-with-ents.js"> </script>
