@@ -24,7 +24,7 @@ Or, download one of the releases on the right.
 ```
 ```javascript
 var source = "<text>Hey, how are you doing?<\/text>";
-result = convertWithEnts(source);
+var result = convertWithEnts(source);
 console.log(result);
 ```
 ## Module Version 
