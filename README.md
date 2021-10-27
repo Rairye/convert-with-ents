@@ -1,7 +1,7 @@
 # convert-with-ents
 Light-weight tool for converting characters in a string into common HTML entities (without regex).
 
-Converts the following characters into the HTML entity quivalents.
+Converts the following characters into the HTML entity equivalents.
 
 1. Ampersand (&)
 2. Less than (<)
@@ -31,7 +31,7 @@ console.log(result);
 
 ### Installation
 
-Download the raw file at https://github.com/Rairye/convert-with-ents/blob/main/convert-with-ents.js
+
 
 ### Code Sample
 
