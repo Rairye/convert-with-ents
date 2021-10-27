@@ -9,7 +9,9 @@ Converts the following characters into the HTML entity quivalents.
 4. Double quote (")
 5. Single quote (')
 
-## Code Sample (standard JS)
+## Standard JS Version 
+
+### Code Sample
 
 
 ```html
