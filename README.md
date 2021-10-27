@@ -1,5 +1,5 @@
 # convert-with-ents
-Light-weight tool for converting characters in a string to common HTML entities (without regex).
+Light-weight tool for converting characters in a string into common HTML entities (without regex).
 
 Converts the following characters into the HTML entity quivalents.
 
