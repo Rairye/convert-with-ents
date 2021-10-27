@@ -1,0 +1,23 @@
+{
+  "name": "convert-with-ents",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Light-weight tool for converting characters in a string into common HTML entities (without regex).",
+  "main": "index.js",
+  "keywords": [
+    "html",
+    "entity",
+    "converter",
+    "noregex"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rairye",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Rairye/convert-with-ents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rairye/convert-with-ents/tree/main/convert-with-ents"
+  }
+}
