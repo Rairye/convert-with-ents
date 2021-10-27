@@ -14,6 +14,8 @@ Converts the following characters into the HTML entity quivalents.
 
 ```html
 <script src = "convert-with-ents.js"> </script>
+```
+```javascript
 var source = "<text>Hey, how are you doing?<\/text>";
 result = convertWithEnts(source);
 console.log(result);
