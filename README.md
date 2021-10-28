@@ -31,7 +31,7 @@ console.log(result);
 
 ### Installation
 
-
+npm i convert-with-ents
 
 ### Code Sample
 
