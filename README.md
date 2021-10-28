@@ -31,7 +31,10 @@ console.log(result);
 
 ### Installation
 
+Install using npm:
+
 npm i convert-with-ents
+
 
 ### Code Sample
 
