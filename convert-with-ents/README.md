@@ -9,6 +9,10 @@ Converts the following characters into the HTML entity equivalents.
 4. Double quote (")
 5. Single quote (')
 
+## Installation
+
+npm i convert-with-ents
+
 ## Code Sample
 
 ```javascript
