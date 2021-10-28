@@ -11,7 +11,10 @@ Converts the following characters into the HTML entity equivalents.
 
 ## Installation
 
+Install using npm:
+
 npm i convert-with-ents
+
 
 ## Code Sample
 
