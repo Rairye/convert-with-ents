@@ -1,6 +1,6 @@
 {
   "name": "convert-with-ents",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Light-weight tool for converting characters in a string into common HTML entities (without regex).",
   "main": "index.js",

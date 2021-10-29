@@ -21,7 +21,7 @@ export default function convertWithEnts(inputStr) {
 		return inputStr;
 	}
 	
-	var result = "";
+	var result = [];
 	var lastReplacement = 0;
 	var stringLength = inputStr.length;
 	
@@ -29,7 +29,7 @@ export default function convertWithEnts(inputStr) {
 		var currentChar = inputStr.charAt(i);
 		if (charMap.has(currentChar)) {
 		   var replacement = charMap.get(currentChar);
-		   result+= (i > lastReplacement ? (inputStr.substring(lastReplacement, i) + replacement) : replacement);
+		   result.push((i > lastReplacement ? (inputStr.substring(lastReplacement, i) + replacement) : replacement));
 		   lastReplacement = i + 1;
 		}
 
@@ -39,6 +39,11 @@ export default function convertWithEnts(inputStr) {
 		return inputStr;
 	}
 	
-	return (lastReplacement == stringLength ? result : result + inputStr.substring(lastReplacement));
+	if (lastReplacement != stringLength) {
+		result.push(inputStr.substring(lastReplacement));
+		
+	}
+	
+	return result.join("");
 	
 }
