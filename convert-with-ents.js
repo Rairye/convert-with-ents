@@ -21,15 +21,15 @@ function convertWithEnts(inputStr) {
 		return inputStr;
 	}
 	
-	var result = "";
+	var result = [];
 	var lastReplacement = 0;
 	var stringLength = inputStr.length;
 	
 	for (var i = 0; i < stringLength; i++) {
 		var currentChar = inputStr.charAt(i);
-		if (charEntMap.has(currentChar)) {
-		   var replacement = charEntMap.get(currentChar);
-		   result+= (i > lastReplacement ? (inputStr.substring(lastReplacement, i) + replacement) : replacement);
+		if (charMap.has(currentChar)) {
+		   var replacement = charMap.get(currentChar);
+		   result.push((i > lastReplacement ? (inputStr.substring(lastReplacement, i) + replacement) : replacement));
 		   lastReplacement = i + 1;
 		}
 
@@ -39,6 +39,11 @@ function convertWithEnts(inputStr) {
 		return inputStr;
 	}
 	
-	return (lastReplacement == stringLength ? result : result + inputStr.substring(lastReplacement));
+	if (lastReplacement != stringLength) {
+		result.push(inputStr.substring(lastReplacement));
+		
+	}
+	
+	return result.join("");
 	
 }
