@@ -9,6 +9,8 @@ Converts the following characters into the HTML entity equivalents.
 4. Double quote (")
 5. Single quote (')
 
+Note: Ampersands are replaced by default, but they can be skipped. Please see the examples below.
+
 ## Standard JS Version 
 
 ### Installation
@@ -27,6 +29,15 @@ var source = "<text>Hey, how are you doing?<\/text>";
 var result = convertWithEnts(source);
 console.log(result);
 ```
+If, for some reason, you need to skip ampersands, please use convertWithEnts(source, true)
+
+```javascript
+
+var source = "<text>I like JS && Python.<\/text>";
+var result = convertWithEnts(source, true);
+console.log(result);
+```
+
 ## Module Version 
 
 ### Installation
@@ -43,6 +54,15 @@ import convertWithEnts from "convert-with-ents";
 
 var source = "<text>Hey, how are you doing?<\/text>";
 var result = convertWithEnts(source);
+console.log(result);
+```
+If, for some reason, you need to skip ampersands, please use convertWithEnts(source, true)
+
+```javascript
+import convertWithEnts from "convert-with-ents";
+
+var source = "<text>I like JS && Python.<\/text>";
+var result = convertWithEnts(source, true);
 console.log(result);
 ```
 
