@@ -16,7 +16,7 @@ limitations under the License.
 
 var charEntMap = new Map([["&", "&amp;"], ["<", "&lt;"], [">", "&gt;"], ["\"", "&quot;"], ["\'", "&#39;"]]);
 
-function convertWithEnts(inputStr) {
+function convertWithEnts(inputStr, skipAmp = false) {
 	if (typeof inputStr != "string") {
 		return inputStr;
 	}
@@ -27,7 +27,7 @@ function convertWithEnts(inputStr) {
 	
 	for (var i = 0; i < stringLength; i++) {
 		var currentChar = inputStr.charAt(i);
-		if (charMap.has(currentChar)) {
+		if (charMap.has(currentChar) && (currentChar != "&" || skipAmp == false)) {
 		   var replacement = charMap.get(currentChar);
 		   result.push((i > lastReplacement ? (inputStr.substring(lastReplacement, i) + replacement) : replacement));
 		   lastReplacement = i + 1;
