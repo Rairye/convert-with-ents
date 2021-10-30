@@ -25,3 +25,7 @@ var source = "<text>Hey, how are you doing?<\/text>";
 var result = convertWithEnts(source);
 console.log(result);
 ```
+
+## Other Packages
+
+If you would like to filter out or create a whitelist for punctuation characters, please see https://github.com/Rairye/js-mnl-punct-norm
