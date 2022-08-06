@@ -14,7 +14,7 @@ limitations under the License.
 
 */
 
-var charEntMap = new Map([["&", "&amp;"], ["<", "&lt;"], [">", "&gt;"], ["\"", "&quot;"], ["\'", "&#39;"]]);
+var charMap = new Map([["&", "&amp;"], ["<", "&lt;"], [">", "&gt;"], ["\"", "&quot;"], ["\'", "&#39;"]]);
 
 function convertWithEnts(inputStr, skipAmp = false) {
 	if (typeof inputStr != "string") {
